@@ -8460,7 +8460,7 @@ PrefabInstance:
     - target: {fileID: 957364679853991353, guid: 2431f5bc7da938b48b7d40bdf729bc1d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1.23
       objectReference: {fileID: 0}
     - target: {fileID: 957364679853991353, guid: 2431f5bc7da938b48b7d40bdf729bc1d,
         type: 3}
@@ -8501,6 +8501,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SolarSystem
+      objectReference: {fileID: 0}
+    - target: {fileID: 6875609893592141834, guid: 2431f5bc7da938b48b7d40bdf729bc1d,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5.4149737
+      objectReference: {fileID: 0}
+    - target: {fileID: 6875609893592141834, guid: 2431f5bc7da938b48b7d40bdf729bc1d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5.7697763
+      objectReference: {fileID: 0}
+    - target: {fileID: 6875609893592141834, guid: 2431f5bc7da938b48b7d40bdf729bc1d,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4.6665845
+      objectReference: {fileID: 0}
+    - target: {fileID: 6875609893592141834, guid: 2431f5bc7da938b48b7d40bdf729bc1d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.37
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8660,4 +8680,3 @@ SceneRoots:
   - {fileID: 2099970469}
   - {fileID: 331264285}
   - {fileID: 6942274636293726888}
-
