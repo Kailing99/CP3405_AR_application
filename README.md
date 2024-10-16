@@ -4,7 +4,7 @@ This is the repository for group B2's educational app code using Unity Engine.
 
 Our group members are:
 1) Sheng Ni Phoebe Chung (14351028)
-2) Sam Prawirawidjaja ()
+2) Sam Prawirawidjaja (14497039)
 3) Chealsea Co Tan (14497206)
 4) Theodore Lee (14341943)
 
