@@ -1,4 +1,4 @@
-repository "My project@trollmodz0110@cloud"
+repository "CP3405_AR_application@Testtttrth@cloud"
   path "/"
     br "/main"
     co "/main"
