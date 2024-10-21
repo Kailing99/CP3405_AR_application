@@ -1,0 +1,46 @@
+{
+    "name": "ActionMap",
+    "maps": [
+        {
+            "name": "New action map",
+            "id": "b7bd0a05-5689-40af-8efd-92d5d24287f9",
+            "actions": [
+                {
+                    "name": "Tap",
+                    "type": "Button",
+                    "id": "494b00ed-62b7-40cf-913d-bf5527299e62",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "Tap",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "a7ce476a-a32c-4d8c-af57-1a0140aafeab",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Tap",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "New Control Scheme",
+            "bindingGroup": "New Control Scheme",
+            "devices": [
+                {
+                    "devicePath": "<HandheldARInputDevice>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
