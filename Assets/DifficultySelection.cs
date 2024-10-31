@@ -1,18 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DifficultySelection : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void SetDifficulty(int difficulty)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        DifficultyLevel selectedDifficulty = (DifficultyLevel)difficulty;
+        QuizManager.Instance.SetDifficulty(selectedDifficulty);
+        SceneManager.LoadScene("QuizQuestionScene"); 
     }
 }
