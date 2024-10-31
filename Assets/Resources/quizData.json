@@ -1,159 +1,184 @@
 {
-    "Easy": [
+    "items": [
         {
             "questionText": "What is the center of our Solar System?",
             "choices": ["Earth", "Moon", "Sun", "Jupiter"],
-            "correctAnswerIndex": 2
+            "correctAnswerIndex": 2,
+            "difficulty": "Easy"
         },
         {
             "questionText": "Which planet is the smallest in the Solar System?",
             "choices": ["Mars", "Mercury", "Venus", "Pluto"],
-            "correctAnswerIndex": 1
+            "correctAnswerIndex": 1,
+            "difficulty": "Easy"
         },
         {
             "questionText": "Which planet is known as the Red Planet?",
             "choices": ["Mars", "Jupiter", "Saturn", "Neptune"],
-            "correctAnswerIndex": 0
+            "correctAnswerIndex": 0,
+            "difficulty": "Easy"
         },
         {
             "questionText": "How many planets are in the Solar System?",
             "choices": ["7", "8", "9", "10"],
-            "correctAnswerIndex": 1
+            "correctAnswerIndex": 1,
+            "difficulty": "Easy"
         },
         {
             "questionText": "What type of planet is Earth?",
             "choices": ["Gas Giant", "Ice Giant", "Terrestrial", "Dwarf Planet"],
-            "correctAnswerIndex": 2
+            "correctAnswerIndex": 2,
+            "difficulty": "Easy"
         },
         {
             "questionText": "What makes Venus the hottest planet in the Solar System?",
             "choices": ["Its proximity to the Sun", "Thick atmosphere with carbon dioxide", "Its large size", "Rapid rotation"],
-            "correctAnswerIndex": 1
+            "correctAnswerIndex": 1,
+            "difficulty": "Easy"
         },
         {
             "questionText": "Which planet has a famous ring system?",
             "choices": ["Uranus", "Jupiter", "Saturn", "Neptune"],
-            "correctAnswerIndex": 2
+            "correctAnswerIndex": 2,
+            "difficulty": "Easy"
         },
         {
             "questionText": "How many moons does Jupiter have at least?",
             "choices": ["63", "79", "50", "29"],
-            "correctAnswerIndex": 1
+            "correctAnswerIndex": 1,
+            "difficulty": "Easy"
         },
         {
             "questionText": "Which planet would float in water due to its low density?",
             "choices": ["Neptune", "Saturn", "Jupiter", "Uranus"],
-            "correctAnswerIndex": 1
+            "correctAnswerIndex": 1,
+            "difficulty": "Easy"
         },
         {
             "questionText": "Which planet experiences retrograde rotation?",
             "choices": ["Earth", "Venus", "Mars", "Jupiter"],
-            "correctAnswerIndex": 1
-        }
-    ],
-    "Normal": [
+            "correctAnswerIndex": 1,
+            "difficulty": "Easy"
+        },
         {
             "questionText": "How long is a day on Mercury?",
             "choices": ["24 hours", "59 Earth days", "88 Earth days", "10 hours"],
-            "correctAnswerIndex": 1
+            "correctAnswerIndex": 1,
+            "difficulty": "Normal"
         },
         {
             "questionText": "What causes the blue-green color of Uranus?",
             "choices": ["Water vapor", "Iron oxide", "Methane in its atmosphere", "Nitrogen gas"],
-            "correctAnswerIndex": 2
+            "correctAnswerIndex": 2,
+            "difficulty": "Normal"
         },
         {
             "questionText": "What is the diameter of Earth?",
             "choices": ["12,742 km", "6,779 km", "49,244 km", "139,822 km"],
-            "correctAnswerIndex": 0
+            "correctAnswerIndex": 0,
+            "difficulty": "Normal"
         },
         {
             "questionText": "Which planet has the largest moon in the Solar System?",
             "choices": ["Mars", "Jupiter", "Saturn", "Neptune"],
-            "correctAnswerIndex": 1
+            "correctAnswerIndex": 1,
+            "difficulty": "Normal"
         },
         {
             "questionText": "How long does it take Neptune to orbit the Sun?",
             "choices": ["84 Earth years", "29.5 Earth years", "11.9 Earth years", "164.8 Earth years"],
-            "correctAnswerIndex": 3
+            "correctAnswerIndex": 3,
+            "difficulty": "Normal"
         },
         {
             "questionText": "What is the temperature on the cloud tops of Jupiter?",
             "choices": ["145°C", "224°C", "178°C", "20°C"],
-            "correctAnswerIndex": 0
+            "correctAnswerIndex": 0,
+            "difficulty": "Normal"
         },
         {
             "questionText": "Which Solar System region lies beyond Neptune and includes dwarf planets?",
             "choices": ["Asteroid Belt", "Oort Cloud", "Kuiper Belt", "Exoplanetary Zone"],
-            "correctAnswerIndex": 2
+            "correctAnswerIndex": 2,
+            "difficulty": "Normal"
         },
         {
             "questionText": "Which planet has a day that lasts 17 hours?",
             "choices": ["Saturn", "Uranus", "Neptune", "Jupiter"],
-            "correctAnswerIndex": 1
+            "correctAnswerIndex": 1,
+            "difficulty": "Normal"
         },
         {
             "questionText": "What is the largest volcano in the Solar System?",
             "choices": ["Olympus Mons on Mars", "Mauna Loa on Earth", "Mount Everest on Earth", "Elysium Mons on Mars"],
-            "correctAnswerIndex": 0
+            "correctAnswerIndex": 0,
+            "difficulty": "Normal"
         },
         {
             "questionText": "Which planet is known for its strong winds and dark spots?",
             "choices": ["Neptune", "Jupiter", "Saturn", "Venus"],
-            "correctAnswerIndex": 0
-        }
-    ],
-    "Hard": [
+            "correctAnswerIndex": 0,
+            "difficulty": "Normal"
+        },
         {
             "questionText": "What percentage of the Solar System's mass does the Sun contain?",
             "choices": ["75%", "80%", "85%", "99.86%"],
-            "correctAnswerIndex": 3
+            "correctAnswerIndex": 3,
+            "difficulty": "Hard"
         },
         {
             "questionText": "How far can the Oort Cloud extend from the Sun?",
             "choices": ["10,000 AU", "50,000 AU", "100,000 AU", "500,000 AU"],
-            "correctAnswerIndex": 2
+            "correctAnswerIndex": 2,
+            "difficulty": "Hard"
         },
         {
             "questionText": "What is the surface pressure on Venus compared to Earth?",
             "choices": ["5 times", "50 times", "92 times", "100 times"],
-            "correctAnswerIndex": 2
+            "correctAnswerIndex": 2,
+            "difficulty": "Hard"
         },
         {
             "questionText": "What characteristic makes Uranus unique among the planets?",
             "choices": ["It has the most moons", "It has a retrograde orbit", "Its axis is tilted sideways", "It is closest to the Sun"],
-            "correctAnswerIndex": 2
+            "correctAnswerIndex": 2,
+            "difficulty": "Hard"
         },
         {
             "questionText": "What is the main composition of Saturn's rings?",
             "choices": ["Iron and rock", "Dust and metal", "Ice and rock particles", "Gases and liquids"],
-            "correctAnswerIndex": 2
+            "correctAnswerIndex": 2,
+            "difficulty": "Hard"
         },
         {
             "questionText": "What temperature range does Mercury experience?",
             "choices": ["125 to 20°C", "180 to 430°C", "145°C (cloud tops)", "214°C"],
-            "correctAnswerIndex": 1
+            "correctAnswerIndex": 1,
+            "difficulty": "Hard"
         },
         {
             "questionText": "What is the distance of Neptune from the Sun?",
             "choices": ["2.87 billion km", "1.43 billion km", "778.3 million km", "4.5 billion km"],
-            "correctAnswerIndex": 3
+            "correctAnswerIndex": 3,
+            "difficulty": "Hard"
         },
         {
             "questionText": "What are the icy objects in the Oort Cloud thought to be the source of?",
             "choices": ["Dwarf planets", "Short-period comets", "Long-period comets", "Asteroids"],
-            "correctAnswerIndex": 2
+            "correctAnswerIndex": 2,
+            "difficulty": "Hard"
         },
         {
             "questionText": "What makes the Great Red Spot on Jupiter unique?",
             "choices": ["It is the largest volcano in the Solar System", "It is a storm that has lasted for centuries", "It is the hottest spot in the Solar System", "It is a crater with an iron core"],
-            "correctAnswerIndex": 1
+            "correctAnswerIndex": 1,
+            "difficulty": "Hard"
         },
         {
             "questionText": "Which planet has no moons and no rings?",
             "choices": ["Earth", "Mars", "Mercury", "Neptune"],
-            "correctAnswerIndex": 2
+            "correctAnswerIndex": 2,
+            "difficulty": "Hard"
         }
     ]
 }
-

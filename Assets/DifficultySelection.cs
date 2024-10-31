@@ -7,6 +7,6 @@ public class DifficultySelection : MonoBehaviour
     {
         DifficultyLevel selectedDifficulty = (DifficultyLevel)difficulty;
         QuizManager.Instance.SetDifficulty(selectedDifficulty);
-        SceneManager.LoadScene("QuizQuestionScene"); 
+        SceneManager.LoadScene("QuizQuestionScene");
     }
 }

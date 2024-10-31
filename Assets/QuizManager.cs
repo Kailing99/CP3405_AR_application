@@ -5,6 +5,7 @@ public class QuizManager : MonoBehaviour
 {
     public static QuizManager Instance { get; private set; } // Singleton instance
 
+
     public List<QuizQuestion> quizQuestions = new List<QuizQuestion>();
     private List<QuizQuestion> filteredQuestions = new List<QuizQuestion>();
     private DifficultyLevel selectedDifficulty;

@@ -2,15 +2,16 @@ using UnityEngine.UI;
 using System.Linq;
 using UnityEngine;
 using System.Collections.Generic;
+using TMPro;
 
 public class QuizUI : MonoBehaviour
 {
-    public Text questionText;
+    public TMP_Text questionText;
     public Button[] choiceButtons;
-    public Text scoreText;
+    public TMP_Text scoreText;
     public GameObject correctPanel;
     public GameObject incorrectPanel;
-    public Text incorrectPanelCorrectAnswerText;
+    public TMP_Text incorrectPanelCorrectAnswerText;
 
     private int score = 0;
     private QuizQuestion currentQuestion;
