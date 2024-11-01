@@ -1,6 +1,5 @@
-using UnityEngine.UI;
-using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections.Generic;
 using TMPro;
 
@@ -18,45 +17,53 @@ public class QuizUI : MonoBehaviour
     private List<QuizQuestion> currentQuestions;
     private QuizManager quizManager;
 
-    // Start is called before the first frame update
     void Start()
     {
-        quizManager = FindAnyObjectByType<QuizManager>();
-    }
-
-    // Sets the difficulty level and fliters the question based on the selected difficulty
-    public void SetDifficulty(DifficultyLevel difficulty)
-    {
-        currentQuestions =quizManager.quizQuestions.Where(q=>q.difficulty==difficulty).ToList();
-        
+        quizManager = QuizManager.Instance;
+        currentQuestions = quizManager.GetQuestionsForDifficulty();
         LoadNextQuestion();
     }
 
-    //Load Next Question
+    // Load Next Question
     void LoadNextQuestion()
     {
+        currentQuestions = quizManager.GetQuestionsForDifficulty(); 
         if (currentQuestions.Count > 0)
         {
             currentQuestion = currentQuestions[Random.Range(0, currentQuestions.Count)];
-
             questionText.text = currentQuestion.questionText;
 
             for (int i = 0; i < choiceButtons.Length; i++)
             {
-                choiceButtons[i].GetComponentInChildren<Text>().text = currentQuestion.choices[i];
+                if (i < currentQuestion.choices.Length) 
+                {
 
-                choiceButtons[i].onClick.RemoveAllListeners();
+                    TMP_Text buttonText = choiceButtons[i].GetComponentInChildren<TMP_Text>();
+                    if (buttonText != null)
+                    {
+                        buttonText.text = currentQuestion.choices[i];
+                    }
+                    else
+                    {
+                        Debug.LogError($"No Text component found in choice button at index {i}.");
+                    }
 
-                int choiceIndex = i;
+                    choiceButtons[i].onClick.RemoveAllListeners(); 
 
-                choiceButtons[i].onClick.AddListener(() => OnChoiceSelected(choiceIndex));
+                    int choiceIndex = i; 
+
+                    choiceButtons[i].onClick.AddListener(() => OnChoiceSelected(choiceIndex));
+                }
+                else
+                {
+                    choiceButtons[i].gameObject.SetActive(false); 
+                }
             }
         }
         else
         {
-            Debug.Log("No more questions.");
+            Debug.LogWarning("No more questions available for the selected difficulty.");
         }
-
     }
 
     // Called when a choice button is clicked
@@ -66,16 +73,15 @@ public class QuizUI : MonoBehaviour
         {
             correctPanel.SetActive(true);
             score++;
-
             UpdateScore();
         }
-        else {
-
+        else
+        {
             incorrectPanel.SetActive(true);
             incorrectPanelCorrectAnswerText.text = "Correct Answer: " + currentQuestion.choices[currentQuestion.correctAnswerIndex];
         }
 
-        Invoke("HidePanels", 2f); 
+        Invoke("HidePanels", 2f);
         Invoke("LoadNextQuestion", 2f);
     }
 
@@ -91,5 +97,4 @@ public class QuizUI : MonoBehaviour
         correctPanel.SetActive(false);
         incorrectPanel.SetActive(false);
     }
-
 }

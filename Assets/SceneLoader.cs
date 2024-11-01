@@ -31,24 +31,27 @@ public class SceneLoader : MonoBehaviour
     public void LoadEasyScene()
     {
         Debug.Log("Easy button pressed!");
+        QuizManager.Instance.SetDifficulty(DifficultyLevel.Easy);
         SceneManager.LoadScene("QuizQuestionScene");
     }
 
     public void LoadNormalScene()
     {
         Debug.Log("Normal button pressed!");
+        QuizManager.Instance.SetDifficulty(DifficultyLevel.Normal);
         SceneManager.LoadScene("QuizQuestionScene");
     }
 
     public void LoadHardScene()
     {
         Debug.Log("Hard button pressed!");
-        SceneManager.LoadScene("QuizQuestionScene");
+        QuizManager.Instance.SetDifficulty(DifficultyLevel.Hard);
+        SceneManager.LoadScene("QuizQuestionsScene");
     }
 
     private void StoreLastScene()
     {
-        lastScene = SceneManager.GetActiveScene().name; // Get the current active scene name
+        lastScene = SceneManager.GetActiveScene().name; 
     }
 
     // Function for the Back button
@@ -56,7 +59,7 @@ public class SceneLoader : MonoBehaviour
     {
         if (!string.IsNullOrEmpty(lastScene))
         {
-            SceneManager.LoadScene(lastScene); // Load the last scene
+            SceneManager.LoadScene(lastScene); 
         }
         else
         {
@@ -72,4 +75,5 @@ public class SceneLoader : MonoBehaviour
             GoBack(); 
         }
     }
+
 }
