@@ -7,6 +7,7 @@ Our group members are:
 2) Sam Prawirawidjaja (14497039)
 3) Chealsea Co Tan (14497206)
 4) Theodore Lee (14341943)
+5) Amrita Khatri (14643239)
 
 ## Instructions for setting up Unity project 
 1) Pull code into folder of your choice
