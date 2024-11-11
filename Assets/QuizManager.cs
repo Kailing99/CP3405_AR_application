@@ -2,6 +2,8 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+
+
 public class QuizManager : MonoBehaviour
 {
     public static QuizManager Instance { get; private set; }
