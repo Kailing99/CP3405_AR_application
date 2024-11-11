@@ -2,56 +2,51 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class QuizUI : MonoBehaviour
 {
     public TMP_Text questionText;
     public Button[] choiceButtons;
+    public TMP_Text questionIndexText;
     public TMP_Text scoreText;
     public GameObject correctPanel;
     public GameObject incorrectPanel;
     public TMP_Text incorrectPanelCorrectAnswerText;
 
     private int score = 0;
-    private QuizQuestion currentQuestion;
+    private int currentQuestionIndex = 0;
     private List<QuizQuestion> currentQuestions;
     private QuizManager quizManager;
+    private bool quizCompleted = false; // Flag to track if the quiz is completed
 
     void Start()
     {
         quizManager = QuizManager.Instance;
         currentQuestions = quizManager.GetQuestionsForDifficulty();
+
+        currentQuestions = ShuffleQuestions(currentQuestions);
         LoadNextQuestion();
     }
 
-    // Load Next Question
     void LoadNextQuestion()
     {
-        currentQuestions = quizManager.GetQuestionsForDifficulty(); 
-        if (currentQuestions.Count > 0)
+        if (currentQuestionIndex < currentQuestions.Count)  
         {
-            currentQuestion = currentQuestions[Random.Range(0, currentQuestions.Count)];
+            QuizQuestion currentQuestion = currentQuestions[currentQuestionIndex];
             questionText.text = currentQuestion.questionText;
+            questionIndexText.text = $"Qestion: {currentQuestionIndex + 1}/{currentQuestions.Count}";
 
             for (int i = 0; i < choiceButtons.Length; i++)
             {
-                if (i < currentQuestion.choices.Length) 
+                if (i < currentQuestion.choices.Length)
                 {
-
                     TMP_Text buttonText = choiceButtons[i].GetComponentInChildren<TMP_Text>();
-                    if (buttonText != null)
-                    {
-                        buttonText.text = currentQuestion.choices[i];
-                    }
-                    else
-                    {
-                        Debug.LogError($"No Text component found in choice button at index {i}.");
-                    }
+                    buttonText.text = currentQuestion.choices[i];
+                    choiceButtons[i].gameObject.SetActive(true);  
+                    choiceButtons[i].onClick.RemoveAllListeners();
 
-                    choiceButtons[i].onClick.RemoveAllListeners(); 
-
-                    int choiceIndex = i; 
-
+                    int choiceIndex = i;
                     choiceButtons[i].onClick.AddListener(() => OnChoiceSelected(choiceIndex));
                 }
                 else
@@ -62,13 +57,15 @@ public class QuizUI : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("No more questions available for the selected difficulty.");
+            ShowFinalScore(); 
         }
     }
 
-    // Called when a choice button is clicked
     void OnChoiceSelected(int choiceIndex)
     {
+        SetChoiceButtonsInteractable(false); // make choice buttons not interactable to avoid spam
+
+        QuizQuestion currentQuestion = currentQuestions[currentQuestionIndex];
         if (choiceIndex == currentQuestion.correctAnswerIndex)
         {
             correctPanel.SetActive(true);
@@ -82,19 +79,60 @@ public class QuizUI : MonoBehaviour
         }
 
         Invoke("HidePanels", 2f);
+        currentQuestionIndex++; 
         Invoke("LoadNextQuestion", 2f);
     }
 
-    // Update Score
     void UpdateScore()
     {
         scoreText.text = "Score: " + score;
     }
 
-    // Hides the correct and incorrect feedback panels
+    void ShowFinalScore()
+    {
+        questionText.text = "Quiz Completed! \nCongradulations you got \nFinal Score: " + score + "/" + currentQuestions.Count;
+        questionText.alignment = TextAlignmentOptions.Center;
+
+        foreach (Button button in choiceButtons)
+        {
+            button.gameObject.SetActive(false); 
+        }
+        quizCompleted = true;
+    }
+    void SetChoiceButtonsInteractable(bool interactable)
+    {
+        foreach (Button button in choiceButtons)
+        {
+            button.interactable = interactable;
+        }
+    }
+
     void HidePanels()
     {
         correctPanel.SetActive(false);
         incorrectPanel.SetActive(false);
+
+        SetChoiceButtonsInteractable(true); // make choice button interactable again
+    }
+
+    List<QuizQuestion> ShuffleQuestions(List<QuizQuestion> questions)
+    {
+        for (int i = 0; i < questions.Count; i++)
+        {
+            QuizQuestion temp = questions[i];
+            int randomIndex = Random.Range(i, questions.Count);
+            questions[i] = questions[randomIndex];
+            questions[randomIndex] = temp;
+        }
+        return questions;
+    }
+
+    void Update()
+    {
+        if (quizCompleted && Input.GetMouseButtonDown(0)) // Detect screen tap when quiz is completed
+        {
+            SceneManager.LoadScene("DifficultyScene");
+            Debug.Log("Returning to DifficultyUI");
+        }
     }
 }
