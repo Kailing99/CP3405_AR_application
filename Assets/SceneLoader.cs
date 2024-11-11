@@ -11,7 +11,7 @@ public class SceneLoader : MonoBehaviour
     {
         StoreLastScene();
         Debug.Log("Begin button pressed!");
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("ARSolarSystemScene");
     }
 
     public void LoadQuizScene()
