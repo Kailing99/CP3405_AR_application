@@ -30,7 +30,6 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadEasyScene()
     {
-        StoreLastScene();
         Debug.Log("Easy button pressed!");
         QuizManager.Instance.SetDifficulty(DifficultyLevel.Easy);
         SceneManager.LoadScene("QuizQuestionScene");
@@ -38,7 +37,6 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadNormalScene()
     {
-        StoreLastScene();
         Debug.Log("Normal button pressed!");
         QuizManager.Instance.SetDifficulty(DifficultyLevel.Normal);
         SceneManager.LoadScene("QuizQuestionScene");
@@ -46,10 +44,15 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadHardScene()
     {
-        StoreLastScene();
         Debug.Log("Hard button pressed!");
         QuizManager.Instance.SetDifficulty(DifficultyLevel.Hard);
         SceneManager.LoadScene("QuizQuestionScene");
+    }
+
+    public void LoadHomeScene()
+    {
+        Debug.Log("Back pressed!");
+        SceneManager.LoadScene("HomeScene");
     }
 
     private void StoreLastScene()

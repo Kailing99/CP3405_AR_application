@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class QuizUI : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class QuizUI : MonoBehaviour
     private List<QuizQuestion> currentQuestions;
     private QuizManager quizManager;
     private bool quizCompleted = false; // Flag to track if the quiz is completed
+    private bool isWaiting = false; // for the wait
 
     void Start()
     {
@@ -78,9 +80,9 @@ public class QuizUI : MonoBehaviour
             incorrectPanelCorrectAnswerText.text = "Correct Answer: " + currentQuestion.choices[currentQuestion.correctAnswerIndex];
         }
 
-        Invoke("HidePanels", 2f);
+        Invoke("HidePanels", 1f);
         currentQuestionIndex++; 
-        Invoke("LoadNextQuestion", 2f);
+        Invoke("LoadNextQuestion", 1f);
     }
 
     void UpdateScore()
@@ -129,10 +131,19 @@ public class QuizUI : MonoBehaviour
 
     void Update()
     {
-        if (quizCompleted && Input.GetMouseButtonDown(0)) // Detect screen tap when quiz is completed
+        if (quizCompleted && Input.GetMouseButtonDown(0) && !isWaiting) 
         {
-            SceneManager.LoadScene("DifficultyScene");
-            Debug.Log("Returning to DifficultyUI");
+            isWaiting = true; 
+
+            StartCoroutine(WaitAndChangeScene());
+
+            IEnumerator WaitAndChangeScene()
+            {
+                yield return new WaitForSeconds(1f); 
+                SceneManager.LoadScene("DifficultyScene");
+                Debug.Log("Returning to DifficultyUI");
+                isWaiting = false; 
+            }
         }
     }
 }
