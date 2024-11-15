@@ -17,6 +17,8 @@ public class QuizUI : MonoBehaviour
     public AudioSource quizAudioSource;
     public AudioSource correctSound;
     public AudioSource incorrectSound;
+    public AudioSource winSound;
+    public AudioSource loseSound;
 
     private int score = 0;
     private int currentQuestionIndex = 0;
@@ -126,6 +128,21 @@ public class QuizUI : MonoBehaviour
         if(quizAudioSource != null)
         {
             quizAudioSource.Stop();
+        }
+
+        if(score >= 5)
+        {
+            if(winSound != null)
+            {
+                winSound.Play();
+            }
+        }
+        else
+        {
+            if(loseSound != null)
+            {
+                loseSound.Play();
+            }
         }
     }
     void SetChoiceButtonsInteractable(bool interactable)
