@@ -15,6 +15,8 @@ public class QuizUI : MonoBehaviour
     public GameObject incorrectPanel;
     public TMP_Text incorrectPanelCorrectAnswerText;
     public AudioSource quizAudioSource;
+    public AudioSource correctSound;
+    public AudioSource incorrectSound;
 
     private int score = 0;
     private int currentQuestionIndex = 0;
@@ -81,12 +83,23 @@ public class QuizUI : MonoBehaviour
             correctPanel.SetActive(true);
             score++;
             UpdateScore();
+
+            if (correctSound != null)
+            {
+                correctSound.Play();
+            }
         }
         else
         {
             incorrectPanel.SetActive(true);
             incorrectPanelCorrectAnswerText.text = "Correct Answer: " + currentQuestion.choices[currentQuestion.correctAnswerIndex];
+
+            if (incorrectSound != null)
+            {
+                incorrectSound.Play();
+            }
         }
+
 
         Invoke("HidePanels", 1f);
         currentQuestionIndex++; 
