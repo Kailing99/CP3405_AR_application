@@ -14,6 +14,7 @@ public class QuizUI : MonoBehaviour
     public GameObject correctPanel;
     public GameObject incorrectPanel;
     public TMP_Text incorrectPanelCorrectAnswerText;
+    public AudioSource quizAudioSource;
 
     private int score = 0;
     private int currentQuestionIndex = 0;
@@ -28,6 +29,13 @@ public class QuizUI : MonoBehaviour
         currentQuestions = quizManager.GetQuestionsForDifficulty();
 
         currentQuestions = ShuffleQuestions(currentQuestions);
+
+        // Quiz Audio strat playing
+        if(quizAudioSource != null)
+        {
+            quizAudioSource.Play();
+        }
+
         LoadNextQuestion();
     }
 
@@ -100,6 +108,12 @@ public class QuizUI : MonoBehaviour
             button.gameObject.SetActive(false); 
         }
         quizCompleted = true;
+
+        // Quiz Audio stop playing
+        if(quizAudioSource != null)
+        {
+            quizAudioSource.Stop();
+        }
     }
     void SetChoiceButtonsInteractable(bool interactable)
     {
