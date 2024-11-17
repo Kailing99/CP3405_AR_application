@@ -37,7 +37,7 @@ public class QuizUI : MonoBehaviour
         {
             QuizQuestion currentQuestion = currentQuestions[currentQuestionIndex];
             questionText.text = currentQuestion.questionText;
-            questionIndexText.text = $"Qestion: {currentQuestionIndex + 1}/{currentQuestions.Count}";
+            questionIndexText.text = $"Question: {currentQuestionIndex + 1}/{currentQuestions.Count}";
 
             for (int i = 0; i < choiceButtons.Length; i++)
             {

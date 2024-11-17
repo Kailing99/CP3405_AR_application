@@ -78,7 +78,8 @@ public class SceneLoader : MonoBehaviour
         // Check if the Android back button is pressed
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            GoBack(); 
+            Debug.Log("Back pressed!");
+            SceneManager.LoadScene("HomeScene");
         }
     }
 
