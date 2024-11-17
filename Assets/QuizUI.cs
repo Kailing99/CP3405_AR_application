@@ -14,6 +14,11 @@ public class QuizUI : MonoBehaviour
     public GameObject correctPanel;
     public GameObject incorrectPanel;
     public TMP_Text incorrectPanelCorrectAnswerText;
+    public AudioSource quizAudioSource;
+    public AudioSource correctSound;
+    public AudioSource incorrectSound;
+    public AudioSource winSound;
+    public AudioSource loseSound;
 
     private int score = 0;
     private int currentQuestionIndex = 0;
@@ -28,6 +33,13 @@ public class QuizUI : MonoBehaviour
         currentQuestions = quizManager.GetQuestionsForDifficulty();
 
         currentQuestions = ShuffleQuestions(currentQuestions);
+
+        // Quiz Audio strat playing
+        if(quizAudioSource != null)
+        {
+            quizAudioSource.Play();
+        }
+
         LoadNextQuestion();
     }
 
@@ -73,12 +85,23 @@ public class QuizUI : MonoBehaviour
             correctPanel.SetActive(true);
             score++;
             UpdateScore();
+
+            if (correctSound != null)
+            {
+                correctSound.Play();
+            }
         }
         else
         {
             incorrectPanel.SetActive(true);
             incorrectPanelCorrectAnswerText.text = "Correct Answer: " + currentQuestion.choices[currentQuestion.correctAnswerIndex];
+
+            if (incorrectSound != null)
+            {
+                incorrectSound.Play();
+            }
         }
+
 
         Invoke("HidePanels", 1f);
         currentQuestionIndex++; 
@@ -100,6 +123,27 @@ public class QuizUI : MonoBehaviour
             button.gameObject.SetActive(false); 
         }
         quizCompleted = true;
+
+        // Quiz Audio stop playing
+        if(quizAudioSource != null)
+        {
+            quizAudioSource.Stop();
+        }
+
+        if(score >= 5)
+        {
+            if(winSound != null)
+            {
+                winSound.Play();
+            }
+        }
+        else
+        {
+            if(loseSound != null)
+            {
+                loseSound.Play();
+            }
+        }
     }
     void SetChoiceButtonsInteractable(bool interactable)
     {
