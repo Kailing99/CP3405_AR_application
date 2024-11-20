@@ -577,6 +577,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 66473843}
+  - component: {fileID: 66473845}
+  - component: {fileID: 66473844}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -603,6 +605,52 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
+--- !u!114 &66473844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66473842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'The Sun is the center of our solar system and contains 99.86% of its mass.
+    It is a nearly perfect sphere of hot plasma, radiating energy primarily through
+    nuclear fusion reactions in its core.
+
+'
+--- !u!222 &66473845
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66473842}
+  m_CullTransparentMesh: 1
 --- !u!1 &72467654
 GameObject:
   m_ObjectHideFlags: 0
@@ -1189,6 +1237,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 147044850}
+  - component: {fileID: 147044851}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -1215,6 +1264,14 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
+--- !u!222 &147044851
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147044849}
+  m_CullTransparentMesh: 1
 --- !u!1 &181910818
 GameObject:
   m_ObjectHideFlags: 0
@@ -1447,6 +1504,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 200798082}
+  - component: {fileID: 200798084}
+  - component: {fileID: 200798083}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -1473,6 +1532,52 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
+--- !u!114 &200798083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200798081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Distance from Sun: 149.6 million km\r\nDiameter: 12,742 km\r\nDay Length:
+    24 hours\r\nYear Length: 365.24 days\r\nTemperature: 88 to 58\xB0C\r\nPlanet
+    Type: Terrestrial\r\nFacts: \r\nOnly planet known to support life\r\nDiverse
+    climate and a protective atmosphere that shields it from harmful solar radiation\r\n70%
+    of its surface is covered by water\r\n"
+--- !u!222 &200798084
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 200798081}
+  m_CullTransparentMesh: 1
 --- !u!1 &213070643
 GameObject:
   m_ObjectHideFlags: 0
@@ -1722,6 +1827,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 260218225}
+  - component: {fileID: 260218227}
+  - component: {fileID: 260218226}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -1748,6 +1855,53 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
+--- !u!114 &260218226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260218224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Distance from Sun: 778.3 million km\r\nDiameter: 139,822 km\r\nDay Length:
+    10 hours\r\nYear Length: 11.9 Earth years\r\nTemperature: 145\xB0C (cloud tops)\r\nPlanet
+    Type: Gas Giant (NOTE: gas giants and ice giants are composed mostly of gases
+    and ice)\r\nFacts: \r\nLargest planet with a mass more than twice that of all
+    the other planets combined\r\nGreat Red Spot, a giant storm persisting for centuries.\r\nIt
+    has at least 79 moons, including the largest moon in the solar system, Ganymede\r\n"
+--- !u!222 &260218227
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 260218224}
+  m_CullTransparentMesh: 1
 --- !u!1 &304613669
 GameObject:
   m_ObjectHideFlags: 0
@@ -1834,6 +1988,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 317807046}
+  - component: {fileID: 317807048}
+  - component: {fileID: 317807047}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -1860,6 +2016,52 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
+--- !u!114 &317807047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317807045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Distance from Sun: 1.43 billion km\r\nDiameter: 116,464 km\r\nDay Length:
+    10.7 hours\r\nYear Length: 29.5 Earth years\r\nTemperature: 178\xB0C (cloud tops)\r\nPlanet
+    Type: Gas Giant\r\nFacts: \r\nFamous for its stunning ring system composed of
+    ice and rock particles\r\nIt has over 80 moons, with Titan being the largest\r.\nLeast
+    dense planet; it would float in water if there were a large enough body of water\r.\n"
+--- !u!222 &317807048
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317807045}
+  m_CullTransparentMesh: 1
 --- !u!1 &350074730
 GameObject:
   m_ObjectHideFlags: 0
@@ -2680,6 +2882,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 480596902}
+  - component: {fileID: 480596904}
+  - component: {fileID: 480596903}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -2706,6 +2910,52 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
+--- !u!114 &480596903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480596901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Distance from Sun: 42.9 million km\r\nDiameter: 4,879 km\r\nDay Length:
+    59 Earth days\r\nYear Length: 88 Earth days\r\nTemperature: 180 to 430\xB0C\r\nPlanet
+    Type: Terrestrial (NOTE: Terrestrial planets are rocky and have solid surfaces)\r\nFacts:
+    \r\nSmallest planet with no atmosphere, leading to extreme temperature fluctuations\r\nLarge
+    iron core and many impact craters\r\nNo moons and no rings\r\n"
+--- !u!222 &480596904
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480596901}
+  m_CullTransparentMesh: 1
 --- !u!1 &513576812 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 635164321995157588, guid: 2431f5bc7da938b48b7d40bdf729bc1d,
@@ -3858,6 +4108,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 724567383}
+  - component: {fileID: 724567385}
+  - component: {fileID: 724567384}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -3884,6 +4136,52 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
+--- !u!114 &724567384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724567382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Distance from Sun: 227.9 million km\r\nDiameter: 6,779 km\r\nDay Length:
+    24.6 hours\r\nYear Length: 687 Earth days\r\nTemperature: 125 to 20\xB0C\r\nPlanet
+    Type: Terrestrial\r\nFacts: \r\nKnown as the Red Planet due to its iron oxide-rich
+    soil\r\nThe Largest volcano (Olympus Mons) and canyon (Valles Marineris) in the
+    solar system.\r\nHas polar ice caps made of water and dry ice\r\n"
+--- !u!222 &724567385
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724567382}
+  m_CullTransparentMesh: 1
 --- !u!1 &743079605
 GameObject:
   m_ObjectHideFlags: 0
@@ -6288,6 +6586,7 @@ GameObject:
   - component: {fileID: 1117853812}
   - component: {fileID: 1117853811}
   - component: {fileID: 1117853810}
+  - component: {fileID: 1117853813}
   m_Layer: 5
   m_Name: Scroll View
   m_TagString: Untagged
@@ -6384,6 +6683,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1117853808}
   m_CullTransparentMesh: 1
+--- !u!23 &1117853813
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117853808}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1150560444
 GameObject:
   m_ObjectHideFlags: 0
@@ -6715,6 +7056,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1182554033}
+  - component: {fileID: 1182554035}
+  - component: {fileID: 1182554034}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -6741,6 +7084,52 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
+--- !u!114 &1182554034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1182554032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Distance from Sun: 4.5 billion km\r\nDiameter: 49,244 km\r\nDay Length:
+    16 hours\r\nYear Length: 164.8 Earth years\r\nTemperature: 214\xB0C\r\nPlanet
+    Type: Ice Giant\r\nFacts: \r\nKnown for its strong winds and dark spots, which
+    are storms similar to Jupiter\u2019s Great Red Spot.\r\nHas 14 known moons, with
+    Triton being the largest.\r\nColdest planet with temperatures around 214\xB0C.\r\n"
+--- !u!222 &1182554035
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1182554032}
+  m_CullTransparentMesh: 1
 --- !u!1 &1192243783
 GameObject:
   m_ObjectHideFlags: 0
@@ -6861,6 +7250,7 @@ GameObject:
   - component: {fileID: 1206576424}
   - component: {fileID: 1206576423}
   - component: {fileID: 1206576422}
+  - component: {fileID: 1206576425}
   m_Layer: 5
   m_Name: Scroll View
   m_TagString: Untagged
@@ -6957,6 +7347,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1206576420}
   m_CullTransparentMesh: 1
+--- !u!23 &1206576425
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206576420}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1213823537
 GameObject:
   m_ObjectHideFlags: 0
@@ -7263,6 +7695,7 @@ GameObject:
   - component: {fileID: 1239329957}
   - component: {fileID: 1239329956}
   - component: {fileID: 1239329955}
+  - component: {fileID: 1239329958}
   m_Layer: 5
   m_Name: Scrollbar Vertical
   m_TagString: Untagged
@@ -7377,6 +7810,48 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1239329953}
   m_CullTransparentMesh: 1
+--- !u!23 &1239329958
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239329953}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!4 &1249423541 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8429981633443581382, guid: 6c8af5c8012f01440af6cb2bc3eb987c,
@@ -7467,6 +7942,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1267766500}
+  - component: {fileID: 1267766502}
+  - component: {fileID: 1267766501}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -7493,6 +7970,52 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
+--- !u!114 &1267766501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267766499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Distance from Sun: 2.87 billion km\r\nDiameter: 50,724 km\r\nDay Length:
+    17 hours\r\nYear Length: 84 Earth years\r\nTemperature: 224\xB0C\r\nPlanet Type:
+    Ice Giant\r\nFacts: \r\nUnique for its tilted axis, causing extreme seasonal
+    variations.\r\nIce giant with a bluegreen color due to methane in its atmosphere.\r\nHas
+    27 known moons and faint rings.\r\n"
+--- !u!222 &1267766502
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267766499}
+  m_CullTransparentMesh: 1
 --- !u!1 &1291695526
 GameObject:
   m_ObjectHideFlags: 0
@@ -9882,6 +10405,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1756661579}
+  - component: {fileID: 1756661581}
+  - component: {fileID: 1756661580}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -9908,6 +10433,53 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
+--- !u!114 &1756661580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756661578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Distance from Sun: 67.7 million km\r\nDiameter: 12,104 km\r\nDay Length:
+    243 Earth days (retrograde rotation)\r\nYear Length: 225 Earth days\r\nTemperature:
+    Around 475\xB0C\r\nPlanet Type: Terrestrial\r\nFacts:\r\nHottest planet due to
+    its thick, toxic atmosphere of carbon dioxide and clouds of sulfuric acid.\r\nsurface
+    pressure 92 times that of Earth.\r\nRetrograde rotation, meaning it spins in
+    the opposite direction to most planets\r\n"
+--- !u!222 &1756661581
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756661578}
+  m_CullTransparentMesh: 1
 --- !u!4 &1765540924 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6605111590819766859, guid: 84d11287c4c3c4b4f88baae3847ba485,
@@ -12183,6 +12755,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2093987116}
+  - component: {fileID: 2093987118}
+  - component: {fileID: 2093987117}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -12209,6 +12783,54 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
+--- !u!114 &2093987117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093987115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Distance from Sun: 5.9 billion km\r\nDiameter: 2,346.6 km\r\nDay Length:
+    153 hours (6.4 Earth days)\r\nYear Length: 248 Earth years\r\nTemperature: -229
+    to -223\xB0C\r\nPlanet Type: Dwarf Planet (NOTE: smaller planetary bodies that
+    orbit the Sun but do not clear their orbital path of other debris)\r\nFacts:
+    \r\nHas five known moons, with Charon being the largest.\r\nKnown for its heart-shaped
+    glacier, Tombaugh Regio.\r\nHas a thin atmosphere that expands when it comes
+    closer to the Sun.\r\n"
+--- !u!222 &2093987118
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093987115}
+  m_CullTransparentMesh: 1
 --- !u!1 &2119643364
 GameObject:
   m_ObjectHideFlags: 0
